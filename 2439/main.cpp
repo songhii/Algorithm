@@ -6,9 +6,19 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int N;
+    int i, j, k;
+    
+    cin >> N;
+    for(i = 0; i < N; i++) {
+        for(j = 0; j < N-i-1 ; j++)
+            cout << " ";
+        for(k = j; k < N; k++)
+            cout << "*";
+        cout << endl;
+    }
     return 0;
 }

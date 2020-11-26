@@ -6,9 +6,24 @@
 //
 
 #include <iostream>
+#include <vector>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int N;
+    int X;
+    
+    cin >> N >> X;
+    vector<int> v(N);
+    
+    for(int i = 0; i < v.size(); i++) {
+        cin >> v[i];
+    }
+    for(int i = 0; i < v.size(); i++) {
+        if(v[i] < X)
+            cout << v[i] << " ";
+    }
+    cout << endl;
+    
     return 0;
 }
