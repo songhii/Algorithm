@@ -5,10 +5,13 @@
 //  Created by songhee on 2020/12/30.
 //
 
+#include <stdio.h>
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    double A, B;
+    cin >> A >> B;
+    printf("%.9lf\n", A/B);
     return 0;
 }

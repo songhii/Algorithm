@@ -6,9 +6,13 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "|\\_/|" << endl;
+    cout << "|q p|   /}" << endl;
+    cout << "( 0 )\"\"\"\\" << endl;
+    cout << "|\"^\"`    |" << endl;
+    cout << "||_/=\\\\__|" << endl;
     return 0;
 }
