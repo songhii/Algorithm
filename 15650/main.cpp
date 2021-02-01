@@ -24,7 +24,7 @@ void dfs(int x)
     
     for(int i = 1; i <= N; i++)
     {
-        if(!visited[i] && arr[x-1g] <= i)
+        if(!visited[i] && arr[x] <= i)
         {
             visited[i] = 1;
             arr[x] = i;
