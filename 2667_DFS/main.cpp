@@ -14,7 +14,6 @@ using namespace std;
 int N, complex_number = 1, house_number = 1;
 int map[MAX][MAX];
 vector<int> complex;
-vector<int> graph[MAX];
 vector<pair<int, int>> dir;
 
 void dfs(int i, int j)
@@ -36,14 +35,7 @@ void dfs(int i, int j)
 int main(int argc, const char * argv[]) {
     scanf("%d", &N);
     dir.push_back({0, -1}); dir.push_back({0, 1}); dir.push_back({-1, 0}); dir.push_back({1, 0});
-    for(int i = 0; i < N; i++)
-    {
-        for(int j = 0; j < N; j++)
-        {
-            scanf("%1d", &map[i][j]);
-            if(map[i][j]) graph[i].push_back(j);
-        }
-    }
+    for(int i = 0; i < N; i++) for(int j = 0; j < N; j++) scanf("%1d", &map[i][j]);
     for(int i = 0; i < N; i++)
     {
         for(int j = 0; j < N; j++)
