@@ -18,11 +18,11 @@ int main(int argc, const char * argv[]) {
     cin >> input;
     for(int i = 0; i < input.length(); i++)
     {
-        if(48 <= input[i] && input[i] <= 57) n += input[i];
+        if('0' <= input[i] && input[i] <= '9') n += input[i];
         else
         {
             num.push_back(stoi(n.c_str()));
-            if(input[i] == 43) oper.push_back(1);
+            if(input[i] == '+') oper.push_back(1);
             else oper.push_back(-1);
             n.clear();
         }
