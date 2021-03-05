@@ -10,7 +10,7 @@
 
 int T, N;
 bool ready[MAX] = {1, 1, };
-int value[MAX] = {0, 1, }, zero[MAX] = {1, 0, }, one[MAX] = {0, 1};
+int value[MAX] = {0, 1, }, zero[MAX] = {1, 0, }, one[MAX] = {0, 1, };
 
 int f(int n)
 {
