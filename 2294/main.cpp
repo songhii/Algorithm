@@ -17,7 +17,7 @@ int coin[COIN_MAX], dp[DP_MAX];
 
 int main(int argc, const char * argv[]) {
     memset(dp, 1000000, sizeof(dp));
-    dp[0] = 1;
+    dp[0] = 0;
     scanf("%d %d", &N, &K);
     for(int i = 0; i < N; i++) scanf("%d", &coin[i]);
     for(int i = 0; i < N; i++) // i번째 동전으로
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
             dp[j] = min(dp[j], dp[j-coin[i]] + 1);
         }
     }
-    if(dp[K] < 100001) printf("%d\n", dp[K]-1);
+    if(dp[K] < 100001) printf("%d\n", dp[K]);
     else printf("-1\n");
     return 0;
 }
