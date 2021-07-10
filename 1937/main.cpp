@@ -23,9 +23,7 @@ int dfs(int x, int y)
         int dx = x + dir_x[i], dy = y + dir_y[i];
         if(dx < 1 || N < dx || dy < 1 || N < dy) continue;
         if(T[x][y] < T[dx][dy])
-        {
             dp[x][y] = max(dp[x][y], dfs(dx, dy) + 1);
-        }
     }
     return dp[x][y];
 }
@@ -41,12 +39,8 @@ int main(int argc, const char * argv[]) {
         }
     }
     for(int i = 1; i <= N; i++)
-    {
         for(int j = 1; j <= N; j++)
-        {
             dfs(i, j);
-        }
-    }
     
     for(int i = 1; i <= N; i++)
         for(int j = 1; j <= N; j++)
