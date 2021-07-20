@@ -6,7 +6,6 @@
 //
 
 #include <iostream>
-#include <cstring>
 #define MAX 2000+1
 using namespace std;
 
